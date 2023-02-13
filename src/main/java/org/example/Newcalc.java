@@ -68,24 +68,15 @@ public class Newcalc {
         l.info("Multiplication-->*");
         l.info("Division-->/");
         char operator = sc.next().charAt(0);
-        switch(operator){
-            case '+':
-                l.info("Addition of two numbers: "+c1.calc());
-                break;
-            case '-':
-                l.info("Subtraction of two numbers: "+c2.calc());
-                break;
-            case '*':
-                l.info("Multiplication of two numbers: "+c3.calc());
-                break;
-            case '/':
-                l.info("Division of two numbers: "+c4.calc());
-                break;
-            default:
+        switch (operator) {
+            case '+' -> l.info("Addition of two numbers: " + c1.calc());
+            case '-' -> l.info("Subtraction of two numbers: " + c2.calc());
+            case '*' -> l.info("Multiplication of two numbers: " + c3.calc());
+            case '/' -> l.info("Division of two numbers: " + c4.calc());
+            default -> {
                 l.info("You enter wrong input");
                 l.info("Please enter valid input");
-                break;
-
+            }
         }
     }
 }
