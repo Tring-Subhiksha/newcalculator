@@ -85,6 +85,7 @@ public class Newcalc {
                 l.info("You enter wrong input");
                 l.info("Please enter valid input");
                 break;
+
         }
     }
 }
